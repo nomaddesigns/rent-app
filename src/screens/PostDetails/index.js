@@ -1,17 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { colors } from './src/config/color';
+import { colors } from '../../config/color' ;
 import { 
   StyleSheet, 
   SafeAreaView, 
   Platform } from 'react-native';
-import Route from './src/navigation/router';
+import PostItems from '../../components/postItems';
+import HeaderForMobile from '../../components/HeaderForMobile';
 
-export default function App() {
+const PostDetails = () => {
   return (
-    <SafeAreaView style={styles.SafeAreaViewForDroid}>
-        <StatusBar style="auto" backgroundColor={colors.primary}/>
-        <Route />
-    </SafeAreaView>
+    <View>
+        <Text>Hellow from post details</Text>
+    </View>
   );
 }
 
@@ -22,3 +22,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fec85c40',
   }
 });
+
+export default PostDetails;
